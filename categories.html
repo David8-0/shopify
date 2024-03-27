@@ -3,16 +3,314 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./Common/common.css"> -->
+    <link rel="stylesheet" href="./Common/common.css">
+    <link rel="stylesheet" href="./categories.css">
     <title>Categories</title>
 </head>
 <body>
     <special-header></special-header>
-    <h1>Categories</h1>
+    <section class="categories">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2 m-3">
+                  <a href="./index.html"> <i class="moto-widget-breadcrumbs__item-icon fa fa-home "></i></a> 
+                </div>
+            </div>
+            <div class="row text-center ">
+                <h1 class="fw-bold fs-1">Ice Creams</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-3 ">
+                    <h2>Categories</h2>
+                    <div class="categoryDiv mt-4 ">
+                        <ul class="list-unstyled">
+                            <li class="fw-bold fs-4 " ><a class=" text-decoration-none redColor" href="">Ice Creams</a></li>
+                            <li class="fw-bold fs-4" ><a class=" text-decoration-none" href="">Croissant</a></li>
+                            <li class="fw-bold fs-4" ><a class=" text-decoration-none" href="">Donuts</a></li>
+                            <li class="fw-bold fs-4" ><a class=" text-decoration-none" href="">Chocolate</a></li>
+                        </ul>
+                    </div>
+
+                    <h2 class="mt-5">Filter by</h2>
+                    <div class="categoryDiv mt-4 ">
+                        <ul class="list-unstyled">
+                            <li class="fw-bold fs-5 mt-4 mb-3 text-black ">Price</li>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="number" name="from" id="from" class="w-100 mt-2 "  placeholder="Min" >
+                                </div>
+                                <div class="col-lg-6 ">
+                                    <input type="number" name="from" id="from" class="w-100 mt-2 " placeholder="Max">
+                                </div>
+                            </div>
+
+                            <li class="fw-bold fs-5 mt-4 mb-3 text-black">Publisher Name</li>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <input type="number" name="from" id="from" class="w-100 "  placeholder="Publisher" >
+                                </div>
+                               
+                            </div>
+                            <li class="text-center mt-4">
+                                <input type="button" value="Apply" class="btn btn-danger rounded-5 w-75 h-100 p-3 ">
+                            </li>
+                            <li class="text-center mt-4">
+                                <input type="button" value="Clear" class="btn btn-danger rounded-5 w-75 h-100 p-3">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+
+
+
+
+
+
+
+
+
+                <div class="col-md-9 mt-5">
+              
+                        <div class="row mb-4">
+                        <div class="col-md-4">
+                        <label for="show" class="me-1">Show</label>
+                        <select name="show" id="show" class="w-75 mb-2">
+                            <option value="9">9</option>
+                            <option value="36">36</option>
+                            <option value="81">81</option>
+                        </select>
+                         </div>
+                  
+                
+                        <div class="col-md-4 ">
+                        <label for="sortBy" >Sort By</label>
+                        <select name="sortBy" id="sortBy" class="w-75">
+                            <option value="priceLowHigh">Price : Low to High</option>
+                            <option value="priceHighLow">Price : High to Low</option>
+                            <option value="nameAZ">Name : A to Z</option>
+                            <option value="nameZA">Name : Z to A</option>
+                        </select>
+                        </div>
+                        <div class="col-4 mt-4 mt-md-0">
+                            <div class="row ">
+                                <div class="col-3  me-lg-0 me-3 ">
+                                    
+                                    <a href="" class="text-decoration-none">
+                                    <div class="rounded-circle rountDiv selected  text-center " style="width: 50px; height: 50px;">
+                                        <div style="line-height: 50px;">1</div>
+                                    </div>
+                                    </a>
+                                </div>
+                              
+                                <div class="col-3 me-3 me-lg-0 ">
+                                    <a href="" class="text-decoration-none">
+                                    <div class="rounded-circle rountDiv  text-center" style="width: 50px; height: 50px;">
+                                        <div style="line-height: 50px;">2</div>
+                                    </div>
+                                    </a>
+                                </div>
+                                <div class="col-3  me-lg-0 ">
+                                    <a href="" class="text-decoration-none">
+                                    <div class="rounded-circle rountDiv text-center" style="width: 50px; height: 50px;">
+                                        <div style="line-height: 50px;">3</div>
+                                    </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
     
-    
+
+
+
+                    <div class="row">
+                        <div class=" col-md-4   p-0 mb-3 "  >
+                            <div class="productDiv ">
+                        <div class="imageTrans">
+                            <a href=""><img src="./images/ice.jpg" class="w-100 " alt="">
+                            <i class="fa-solid fa-eye fa-xxl"></i>
+                        </a>
+                        </div>
+                            <h5 class="text-center mt-3">Ice Cream Vanilla</h5>
+                            <h5 class="text-center mt-3">$23.00</h5>
+                          <a href="" class="text-decoration-none ">  <h5 class="text-center mt-3 redColor"> <i class="fa-solid fa-cart-shopping fs-6 pe-2 redColor"></i>  Add To Cart</h5>  </a>
+                      
+                        </div>
+                        </div>
+                        <div class=" col-md-4   p-0 mb-3 "  >
+                            <div class="productDiv ">
+                        <div class="imageTrans">
+                            <a href=""><img src="./images/ice.jpg" class="w-100 " alt="">
+                            <i class="fa-solid fa-eye fa-xxl"></i>
+                        </a>
+                        </div>
+                            <h5 class="text-center mt-3">Ice Cream Vanilla</h5>
+                            <h5 class="text-center mt-3">$23.00</h5>
+                          <a href="" class="text-decoration-none ">  <h5 class="text-center mt-3 redColor"> <i class="fa-solid fa-cart-shopping fs-6 pe-2 redColor"></i>  Add To Cart</h5>  </a>
+                      
+                        </div>
+                        </div>
+                        <div class=" col-md-4   p-0 mb-3 "  >
+                            <div class="productDiv ">
+                        <div class="imageTrans">
+                            <a href=""><img src="./images/ice.jpg" class="w-100 " alt="">
+                            <i class="fa-solid fa-eye fa-xxl"></i>
+                        </a>
+                        </div>
+                            <h5 class="text-center mt-3">Ice Cream Vanilla</h5>
+                            <h5 class="text-center mt-3">$23.00</h5>
+                          <a href="" class="text-decoration-none ">  <h5 class="text-center mt-3 redColor"> <i class="fa-solid fa-cart-shopping fs-6 pe-2 redColor"></i>  Add To Cart</h5>  </a>
+                      
+                        </div>
+                        </div>
+                    </div>
+                  
+                    <div class="row">
+                        <div class=" col-md-4   p-0 mb-3 "  >
+                            <div class="productDiv ">
+                        <div class="imageTrans">
+                            <a href=""><img src="./images/ice.jpg" class="w-100 " alt="">
+                            <i class="fa-solid fa-eye fa-xxl"></i>
+                        </a>
+                        </div>
+                            <h5 class="text-center mt-3">Ice Cream Vanilla</h5>
+                            <h5 class="text-center mt-3">$23.00</h5>
+                          <a href="" class="text-decoration-none ">  <h5 class="text-center mt-3 redColor"> <i class="fa-solid fa-cart-shopping fs-6 pe-2 redColor"></i>  Add To Cart</h5>  </a>
+                      
+                        </div>
+                        </div>
+                        <div class=" col-md-4   p-0 mb-3 "  >
+                            <div class="productDiv ">
+                        <div class="imageTrans">
+                            <a href=""><img src="./images/ice.jpg" class="w-100 " alt="">
+                            <i class="fa-solid fa-eye fa-xxl"></i>
+                        </a>
+                        </div>
+                            <h5 class="text-center mt-3">Ice Cream Vanilla</h5>
+                            <h5 class="text-center mt-3">$23.00</h5>
+                          <a href="" class="text-decoration-none ">  <h5 class="text-center mt-3 redColor"> <i class="fa-solid fa-cart-shopping fs-6 pe-2 redColor"></i>  Add To Cart</h5>  </a>
+                      
+                        </div>
+                        </div>
+                        <div class=" col-md-4   p-0 mb-3 "  >
+                            <div class="productDiv ">
+                        <div class="imageTrans">
+                            <a href=""><img src="./images/ice.jpg" class="w-100 " alt="">
+                            <i class="fa-solid fa-eye fa-xxl"></i>
+                        </a>
+                        </div>
+                            <h5 class="text-center mt-3">Ice Cream Vanilla</h5>
+                            <h5 class="text-center mt-3">$23.00</h5>
+                          <a href="" class="text-decoration-none ">  <h5 class="text-center mt-3 redColor"> <i class="fa-solid fa-cart-shopping fs-6 pe-2 redColor"></i>  Add To Cart</h5>  </a>
+                      
+                        </div>
+                        </div>
+                    </div>
+                  
+                    <div class="row">
+                        <div class=" col-md-4   p-0 mb-3 "  >
+                            <div class="productDiv ">
+                        <div class="imageTrans">
+                            <a href=""><img src="./images/ice.jpg" class="w-100 " alt="">
+                            <i class="fa-solid fa-eye fa-xxl"></i>
+                        </a>
+                        </div>
+                            <h5 class="text-center mt-3">Ice Cream Vanilla</h5>
+                            <h5 class="text-center mt-3">$23.00</h5>
+                          <a href="" class="text-decoration-none ">  <h5 class="text-center mt-3 redColor"> <i class="fa-solid fa-cart-shopping fs-6 pe-2 redColor"></i>  Add To Cart</h5>  </a>
+                      
+                        </div>
+                        </div>
+                        <div class=" col-md-4   p-0 mb-3 "  >
+                            <div class="productDiv ">
+                        <div class="imageTrans">
+                            <a href=""><img src="./images/ice.jpg" class="w-100 " alt="">
+                            <i class="fa-solid fa-eye fa-xxl"></i>
+                        </a>
+                        </div>
+                            <h5 class="text-center mt-3">Ice Cream Vanilla</h5>
+                            <h5 class="text-center mt-3">$23.00</h5>
+                          <a href="" class="text-decoration-none ">  <h5 class="text-center mt-3 redColor"> <i class="fa-solid fa-cart-shopping fs-6 pe-2 redColor"></i>  Add To Cart</h5>  </a>
+                      
+                        </div>
+                        </div>
+                        <div class=" col-md-4   p-0 mb-3 "  >
+                            <div class="productDiv ">
+                        <div class="imageTrans">
+                            <a href=""><img src="./images/ice.jpg" class="w-100 " alt="">
+                            <i class="fa-solid fa-eye fa-xxl"></i>
+                        </a>
+                        </div>
+                            <h5 class="text-center mt-3">Ice Cream Vanilla</h5>
+                            <h5 class="text-center mt-3">$23.00</h5>
+                          <a href="" class="text-decoration-none ">  <h5 class="text-center mt-3 redColor"> <i class="fa-solid fa-cart-shopping fs-6 pe-2 redColor"></i>  Add To Cart</h5>  </a>
+                      
+                        </div>
+                        </div>
+                    </div>
+                  
+                    <div class="row mb-4 mt-5 mb-5">
+                        <div class="col-md-4">
+                        <label for="show" class="me-1">Show</label>
+                        <select name="show" id="show" class="w-75 mb-2">
+                            <option value="9">9</option>
+                            <option value="36">36</option>
+                            <option value="81">81</option>
+                        </select>
+                         </div>
+                  
+                
+                        <div class="col-md-4 ">
+                        <label for="sortBy" >Sort By</label>
+                        <select name="sortBy" id="sortBy" class="w-75">
+                            <option value="priceLowHigh">Price : Low to High</option>
+                            <option value="priceHighLow">Price : High to Low</option>
+                            <option value="nameAZ">Name : A to Z</option>
+                            <option value="nameZA">Name : Z to A</option>
+                        </select>
+                        </div>
+                        <div class="col-4 mt-4 mt-md-0">
+                            <div class="row ">
+                                <div class="col-3  me-lg-0 me-3 ">
+                                    <a href="" class="text-decoration-none">
+                                    <div class="rounded-circle rountDiv selected  text-center " style="width: 50px; height: 50px;">
+                                        <div style="line-height: 50px;">1</div>
+                                    </div>
+                                </a>
+                                </div>
+                              
+                                <div class="col-3 me-3 me-lg-0 ">
+                                    <a href="" class="text-decoration-none">
+                                    <div class="rounded-circle rountDiv  text-center" style="width: 50px; height: 50px;">
+                                        <div style="line-height: 50px;">2</div>
+                                    </div>
+                                    </a>
+                                </div>
+                                <div class="col-3  me-lg-0 ">
+                                    <a href="" class="text-decoration-none">
+                                    <div class="rounded-circle rountDiv text-center" style="width: 50px; height: 50px;">
+                                        <div style="line-height: 50px;">3</div>
+                                    </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>  
+                 
+                </div>
+                
+                
+                
+            </div>
+        </div>
+    </section>
+  
     <special-footer></special-footer>
     <script src="./Common/common.js" type="module"></script>
-    <!-- <script src="./Common/common.js"></script> -->
+    <script src="./categories.js" type="module"></script>
 </body>
 </html>

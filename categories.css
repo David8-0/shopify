@@ -1,0 +1,153 @@
+*{
+
+  font-family: 'Roboto Slab', serif;
+
+
+
+}
+
+.categories .categoryDiv a, .categories .categoryDiv li{
+    font: 600 18px 'Roboto Slab', sans-serif;
+    color: #2b2f3e;
+    transition: all 0.5s;
+}
+
+.categories .categoryDiv .redColor{
+    color: #fc5047;
+}
+
+.categories .rountDiv{
+    background-color:#fc5047;
+    color:#f3f3f3;
+}
+
+
+.categories .categoryDiv a:hover{
+    color: #fc5047;
+}
+.categories h2{
+    font-weight: 400;
+  font-style: normal;
+  font-family: 'Roboto Slab', serif;
+  color: #2b2f3e;
+  font-size: 37px;
+  line-height: 1.1;
+  letter-spacing: 0px;
+}
+.categories i{
+
+    color: #fc5047;
+    font-size: 12px;
+}
+.categories .categoryDiv input::placeholder{
+    color: #fc5047;
+    opacity: 50%;
+}
+.categories .categoryDiv .btn-danger{
+    background-color:#fc5047
+}
+
+
+.categories .redColor{
+    color: #fc5047;
+}
+
+.categories .categoryDiv{
+    
+    border: none;
+  background: #f3f3f3;
+  padding: 20px;
+}
+
+
+
+
+.categories .productDiv{
+    background-color: #f3f3f3;
+    padding: 20px; 
+    width: 95%;
+   
+}
+
+.categories .productDiv h5{
+    transition: all 0.5s
+}
+
+.categories .productDiv h5:hover{
+    color: #fc5047;
+  
+}
+.categories .productDiv .imageTrans:hover{
+   opacity: 50%;
+}
+
+.categories .productDiv .imageTrans {
+    position: relative;
+    display: inline-block; 
+    transition: opacity 0.3s ease; 
+    z-index: 1;
+}
+
+.categories .productDiv .fa-eye {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    font-size: 22px;
+
+}
+
+.categories .productDiv .imageTrans:hover .fa-eye {
+    opacity: 1;
+}
+
+
+.categories .productDiv .redColor{
+    transition: all 0.5s
+}
+
+.categories .productDiv .redColor:hover{
+    color: #959595;
+  
+}
+
+
+.categories label{
+    font-family: 'Open Sans', sans-serif;
+  color: #959595;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.categories select{
+   
+  padding: 11px 12px;
+  background: #ffffff;
+  font: 400 17px 'Open Sans';
+  color: #2b2f3e;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ebebeb;
+  border-radius: 2px;
+}
+.categories select > option{
+    font: 400 14px/1 'Open Sans';
+  padding: 8px 10px;
+  border-bottom: none;
+  
+  color: #959595;
+}
+
+
+.categories .selected{
+    background-color: #2b2f3e;
+}
+
+.categories .rountDiv{
+    transition: all 0.5s;
+}
+.categories .rountDiv:hover{
+    background-color: #2b2f3e;
+}
