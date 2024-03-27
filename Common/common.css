@@ -1,86 +1,89 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
-:root{
-    --main-font-family:"Roboto Slab", serif;
-    --hover-color:#fc5047;
-    --main-font-size:26px;
-    --sec-font-size:14px;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+:root {
+  --main-font-family: "Roboto Slab", serif;
+  --hover-color: #fc5047;
+  --main-font-size: 26px;
+  --sec-font-size: 14px;
 }
 
-
-
-header a{
-    transition: all 0.5s;
-    text-decoration: none;
-    color:white;
-    font-size: 18px;
+header a {
+  transition: all 0.5s;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
 }
-header a i ,header i{
-    transition: all 0.5s;
-    font-size: var(--main-font-size);
+header a i,
+header i {
+  transition: all 0.5s;
+  font-size: var(--main-font-size);
 }
-header .search i{
-    position: absolute;
-    top:20%;
-    right: 10px;
+header .search i {
+  position: absolute;
+  top: 20%;
+  right: 10px;
 }
-header a:hover, header a:hover i,header .search i:hover{
-    color:var(--hover-color);
-    cursor: pointer;
-}
-
-header{
-    
-    width: 100%;
-    background-image: url("../images/bg.jpg");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 45px 0px 25px;
+header a:hover,
+header a:hover i,
+header .search i:hover {
+  color: var(--hover-color);
+  cursor: pointer;
 }
 
-body{
-    font-family: var(--main-font-family);
-    padding-top: 215px;
-    height: 200Vh;
+header {
+  width: 100%;
+  background-image: url("../images/bg.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 45px 0px 25px;
 }
 
-.search-input{
-    height: 50px;
-    padding: 6px 40px 6px 10px;
-    background: transparent;
-    font: normal 12px / normal 'Open Sans';
-    color: #959595;
-    background: #ffffff;
-    border: 1px solid #e6e6e6;
-    border-radius: 25px;
+body {
+  font-family: var(--main-font-family);
+  padding-top: 215px;
+  height: 200vh;
+  background-image: url("../images/bg.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center;
+}
+
+.search-input {
+  height: 50px;
+  padding: 6px 40px 6px 10px;
+  background: transparent;
+  font: normal 12px / normal "Open Sans";
+  color: #959595;
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 25px;
 }
 
 input:focus-visible {
-    outline: none !important;
-    outline-offset: 0;
+  outline: none !important;
+  outline-offset: 0;
 }
 /**Header*/
 @media (max-width: 1199.98px) {
-    header a i {
-        font-size: var(--sec-font-size);
-    }
-    header{
-        padding-inline:0 !important;
-    }
-    header a{
-        font-size: var(--sec-font-size);
-    }
-    header .search{
-        width: 60%;
-    }
-
- }
- @media (max-width: 767.98px) { 
-    header .search{
-        width: 100%;
-    }
- }
+  header a i {
+    font-size: var(--sec-font-size);
+  }
+  header {
+    padding-inline: 0 !important;
+  }
+  header a {
+    font-size: var(--sec-font-size);
+  }
+  header .search {
+    width: 60%;
+  }
+}
+@media (max-width: 767.98px) {
+  header .search {
+    width: 100%;
+  }
+}
