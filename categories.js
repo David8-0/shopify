@@ -4,16 +4,16 @@ import {getData} from './Api/API.js';
 
 
 async function assignData(category,page) {
-  var data;
+  let data;
   data = await getData(category);
-  var Text = ``;
-  var size = 6; var arrayOfArrays = [];
-  for (var i=0; i<data.length; i+=size) {
+  let Text = ``;
+  let size = 6; let arrayOfArrays = [];
+  for (let i=0; i<data.length; i+=size) {
        arrayOfArrays.push(data.slice(i,i+size));
   }
 
-    var itemCard = document.getElementById('itemCard');
-  var CategoryName = document.getElementById('catrgoryName');
+    let itemCard = document.getElementById('itemCard');
+  let CategoryName = document.getElementById('catrgoryName');
 
   arrayOfArrays[page].forEach(item => {
       Text += `
@@ -40,23 +40,23 @@ async function assignData(category,page) {
 
 //default 
 assignData('ice cream',1)
-var defaultCategory =  document.querySelectorAll('[data-category="ice cream"]');
+let defaultCategory =  document.querySelectorAll('[data-category="ice cream"]');
 defaultCategory[0].classList.add('redColor');
 
 
-var defaultPage = document.querySelectorAll('[page-number="1"]');
+let defaultPage = document.querySelectorAll('[page-number="1"]');
 defaultPage[0].classList.add('selected');
 // end default
 
-var page; 
+let page; 
     document.querySelectorAll('.category').forEach(item => {
         item.addEventListener('click', function() {
-            var category = this.getAttribute('data-category');
+            let category = this.getAttribute('data-category');
             document.querySelectorAll('.category').forEach(item => {
                 item.classList.remove('redColor');
             });
             this.classList.add('redColor');
-            var paginationElements = document.querySelectorAll('.paginations');
+            let paginationElements = document.querySelectorAll('.paginations');
             paginationElements.forEach(item=>{
               item.classList.remove('selected');
             })
@@ -68,7 +68,7 @@ var page;
     document.querySelectorAll('.paginations').forEach(item => {
         item.addEventListener('click', function() {
        
-            var number = this.getAttribute('page-number');
+            let number = this.getAttribute('page-number');
 
             document.querySelectorAll('.paginations').forEach(item => {
                 item.classList.remove('selected');
@@ -80,7 +80,7 @@ var page;
     });
 
 function getCurrentCategory() {
-    var selectedCategory = document.querySelector('.category.redColor');
+    let selectedCategory = document.querySelector('.category.redColor');
     if (selectedCategory) {
         return selectedCategory.getAttribute('data-category');
     } else {
