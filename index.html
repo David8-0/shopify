@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Common/common.css">
     <link rel="stylesheet" href="./style.css" />
     <title>shopify</title>
   </head>
-  <body>
-    <special-header></special-header>
+  <body class="position-relative">
+      <special-header></special-header>
+ 
+
+
 
     <section id="sec-2" class="lb-bg py-5 bg-white">
       <div class="container">
@@ -119,9 +125,13 @@
         </div>
       </div>
     </section>
-
+    <button class="btn btn-danger" id="get">get Data</button>
     <special-footer></special-footer>
 
+    <special-loader></special-loader>
+    <div id="ss">
+      
+    </div>
     <script src="./Common/common.js" type="module"></script>
     <script src="./index.js" type="module"></script>
   </body>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Common/common.css">
+    <link rel="stylesheet" href="./login.css">
+    <title>Login</title>
+</head>
+<body>
+    <special-header></special-header>
+
+    <div class="container bg-info vh-100 d-flex justify-content-center align-items-center flex-column ">
+        <h1 class="text-center mb-3">Sign In</h1>
+        <form action="" class="form-control">
+         <div class="mb-3">
+                <label for="email-input" class="form-label">Email</label>
+                <input type="email" class="form-control" name="" id="email-input" aria-describedby="emailHelpId" placeholder="abc@mail.com"/>
+            </div>
+            <div class="alert alert-danger d-none" id="alert-email" role="alert">
+                
+              </div>
+    
+            <div class="mb-3">
+                <label for="password-input" class="form-label">Password</label>
+                <input type="password" class="form-control" name="" id="password-input" placeholder=""/>
+            </div>
+            <div class="alert alert-danger d-none" id="alert-password" role="alert">
+                
+            </div>
+            <div class="alert alert-danger d-none" id="general-alert" role="alert">
+                
+            </div>
+            <button id="loginBtn" class="btn btn-info">login with google account</button>
+            <button id="normal-loginBtn" class="btn btn-success">login</button>
+            <div>
+                <p>need to register first ?</p>
+                <a href="../register/register.html" class="btn btn-outline-success">ٌRegister</a>
+            </div>
+        </form>
+        
+    </div>
+
+    <special-footer></special-footer>
+    <special-loader></special-loader>
+    <div id="ss">
+      
+    </div>
+    <script src="../Common/common.js" type="module"></script>
+    <script src="./login.js" type="module"></script>
+</body>
+</html>

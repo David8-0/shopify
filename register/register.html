@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Common/common.css">
+    <link rel="stylesheet" href="./register.css">
+    <title>Register</title>
+</head>
+<body>
+    <special-header></special-header>
+    <div class="container bg-info vh-100 d-flex justify-content-center align-items-center flex-column ">
+        <h1 class="text-center mb-3">Register</h1>
+        <a href="../login/login.html" class="btn btn-warning">Login</a>
+        <form action="" class="form-control">
+            <div class="mb-3">
+                <label for="name-input" class="form-label">Name</label>
+                <input type="text" class="form-control" name="" id="name-input" placeholder="Name"/>
+            </div>
+            <div class="alert alert-danger d-none" id="alert-name" role="alert">
+                
+              </div>
+    
+            <div class="mb-3">
+                <label for="email-input" class="form-label">Email</label>
+                <input type="email" class="form-control" name="" id="email-input" aria-describedby="emailHelpId" placeholder="abc@mail.com"/>
+            </div>
+            <div class="alert alert-danger d-none" id="alert-email" role="alert">
+                
+              </div>
+    
+            <div class="mb-3">
+                <label for="password-input" class="form-label">Password</label>
+                <input type="password" class="form-control" name="" id="password-input" placeholder=""/>
+            </div>
+    
+            <div class="alert alert-danger d-none" id="alert-password" role="alert">
+                
+              </div>
+    
+            <button id="register-Btn" class="btn btn-success">Register</button>
+            
+        </form>
+    
+    </div>
+    
+
+    <special-footer></special-footer>
+    <special-loader></special-loader>
+    <div id="ss">
+      
+    </div>
+    <script src="../Common/common.js" type="module"></script>
+    <script src="./register.js" type="module"></script>
+</body>
+</html>

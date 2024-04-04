@@ -1,13 +1,17 @@
 "use strict";
-import {getData} from './Api/API.js';
-
+import {API} from './Classes/API.js';
+let btn = document.getElementById('get');
 let data;
+btn.onclick = async function(){
+    let d = await API.getData();
+    console.log(d);
+};
+// async function assignData(){
 
-async function assignData(){
-    data = await getData();
-    console.log(data);
-}
-assignData();
+//     data = await API.getProduct(47746,"Pizza");
+//     console.log(data);
+// }
+// assignData();
 
 
 
