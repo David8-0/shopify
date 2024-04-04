@@ -12,13 +12,9 @@ async function assignData(category,page) {
        arrayOfArrays.push(data.slice(i,i+size));
   }
 
-  
-
-  var itemCard = document.getElementById('itemCard');
+    var itemCard = document.getElementById('itemCard');
   var CategoryName = document.getElementById('catrgoryName');
 
-
-  
   arrayOfArrays[page].forEach(item => {
       Text += `
           <div class="col-md-4 p-0 mb-3">
@@ -65,14 +61,7 @@ var page;
               item.classList.remove('selected');
             })
             paginationElements[0].classList.add('selected');
-
-           
-
-
-            assignData(category, 1);   
-          
-           
-            
+            assignData(category, 1);    
         });
     });
 
@@ -90,7 +79,6 @@ var page;
         });
     });
 
-
 function getCurrentCategory() {
     var selectedCategory = document.querySelector('.category.redColor');
     if (selectedCategory) {
@@ -100,10 +88,3 @@ function getCurrentCategory() {
         return null;
     }
 }
-
-
-
-
-
-
-
