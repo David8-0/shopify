@@ -3,10 +3,6 @@ import {getData} from './Api/API.js';
 
 
 
-
-
-
-
 async function assignData(category,page) {
   var data;
   data = await getData(category);
@@ -20,39 +16,6 @@ async function assignData(category,page) {
 
   var itemCard = document.getElementById('itemCard');
   var CategoryName = document.getElementById('catrgoryName');
-
-
-
-
-  //   function sort(pageNumber){
-    
-  //     var value =  document.getElementById("selectSortMethod").value;
-          
-  //     var sorted =[];
-  //         switch(value){
-  //           case 'nameAZ':
-  //              sorted.push(arrayOfArrays[pageNumber].sort((a, b) => a.title.localeCompare(b.title)));
-  //            break;
-  //            case 'nameZA':
-  //              sorted =   arrayOfArrays[pageNumber].sort((a, b) => a.title.localeCompare(b.title));
-  //             break;
-  //             case 'select':
-  //               sorted = arrayOfArrays[pageNumber];
-  //               break;
-  //             default:
-  //               sorted = arrayOfArrays[pageNumber];
-  //         }
-    
-      
-  //         return sorted;
-  //       }
-    
-
-
-
-  // var arrrr = sort(page)[0];
-
-
 
 
   
